@@ -1,0 +1,174 @@
+#skills-container {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#skills-container > div {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #666666;
+    margin: 20px;
+    display: inline-block;
+    color: white;
+    overflow: hidden;
+}
+
+#skills-container > div {
+    text-align: center;
+    position: relative;
+}
+
+#skills-container img {
+    vertical-align: middle;
+    transition: all 0.4s linear;
+    height: 50%;
+    width: auto;
+    object-fit: scale-down;
+    max-width: 90%;
+    margin: 25% auto;
+    filter: grayscale(1) brightness(.75);
+}
+
+#skills-container span {
+    display: block;
+    color: #ffffff;
+}
+
+.skills {
+    width: 80%;
+    margin: 7%;
+}
+
+#skills-container > div:hover .skills {
+    height: auto;
+}
+
+#skills-container > div:hover img {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 40%;
+    filter: none;
+}
+
+#skills-container > div:hover {
+    cursor: pointer;
+}
+
+
+/* skill level indicators */
+.skills > rect { fill: #666666; }
+.level-1 > rect:nth-of-type(-n+1) { fill: #49C5F2; }
+.level-2 > rect:nth-of-type(-n+2) { fill: #49C5F2; }
+.level-3 > rect:nth-of-type(-n+3) { fill: #49C5F2; }
+.level-4 > rect:nth-of-type(-n+4) { fill: #49C5F2; }
+.level-5 > rect:nth-of-type(-n+5) { fill: #49C5F2; }
+
+
+#order-skills {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
+    background-color: transparent;
+    outline: none;
+    color: #999999;
+    overflow: hidden;
+}
+
+#sort-container {
+    margin: 15px 0 0 10%;
+}
+
+.sort-button {
+    border: 1px solid #999999;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #999999;
+    padding: 3px 6px;
+    margin: 5px;
+    transition: all .5s linear;
+    font-size: .7em;
+}
+
+.sort-button:hover, .sort-button.active {
+    background-color: rgba(153, 153, 153, .3);
+    cursor: pointer;    
+}
+
+/* details */
+#details-container {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    height: 40%;
+    width: 60%;
+    background-color: #222222;
+    opacity: .9;
+    box-shadow: 0 0 5px 1px rgba(153, 153, 153, .5);
+    padding: 15px;
+    color: white;
+}
+
+#details-container.hidden {
+    display: none;
+}
+
+#details-close {
+    background-color: #333333;
+    color: red;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 2px;
+    line-height: 100%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #333333;
+    float: right;
+    transition: all .5s linear;
+    cursor: pointer;
+}
+
+#details-container h1 { font-size: 1em; }
+#details-container h2 { font-size: .8em; margin: 15px 0 5px 0;}
+#details-container li { 
+    font-size: .8em;
+}
+
+#details-container ul {
+    margin: 0;
+}
+
+#details-container > div.hidden {
+    display: none;
+}
+
+.details-counter {
+    color: #999999;
+    background-color: #333333;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: .7em;
+    font-weight: bold;
+    line-height: 19px;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    border-radius: 100%;
+    display: inline-block;
+    transition: all .5s linear;
+    
+}
+
+.details-counter.hidden {
+    display: none;
+}
+
+#skills-container > div:hover .details-counter {
+    color: #222222;
+    background-color: #49C5F2;
+}
+

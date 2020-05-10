@@ -1,0 +1,146 @@
+{"skills": 
+ [
+     {"id": 1, "name": "Access", "icon": "access.svg", "level": 4, "details":
+        {"description": [],
+        "projects": [],
+        "articles": []
+        }
+     },
+     
+     {"id": 2, "name": "C", "icon": "c.svg", "level": 3, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 3, "name": "CSS", "icon": "css.svg", "level": 3, "details": 
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 4, "name": "R", "icon": "r.svg", "level": 4, "details": 
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 5, "name": "D3.js", "icon": "d3js.svg", "level": 2, "details": 
+        {"description": [],
+         "projects": [
+             {"text": "Lebenslauf / Projekte", "link": "https://andreas.crede.cc"}
+         ],
+         "articles": []
+        }
+     },
+     
+     {"id": 6, "name": "JavaScript", "icon": "javascript.svg", "level": 3, "details": 
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 7, "name": "Python", "icon": "python.svg", "level": 4, "details":
+        {"description": [],
+         "projects": [
+             {"text": "Datenkompression mit LZW", "link": "https://github.com/RubyCC/lzw"}
+         ],
+         "articles": []
+        }
+     },
+     
+     {"id": 8, "name": "VBA", "icon": "vba.svg", "level": 5, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 9, "name": "VB.Net", "icon": "vbnet.svg", "level": 3, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 10, "name": "HTML", "icon": "html.svg", "level": 4, "details":
+        {"description": [],
+         "projects": [
+             {"text": "Webseite und IT-Infrastruktur des VBFWM e.V.", "link": "https://www.vbfwm.de"}
+         ],
+         "articles": []
+        }
+     },
+     
+     {"id": 11, "name": "Excel", "icon": "excel.svg", "level": 5, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 12, "name": "Word", "icon": "word.svg", "level": 5, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+
+     {"id": 13, "name": "LaTeX", "icon": "latex.svg", "level": 3, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 14, "name": "PowerPoint", "icon": "powerpoint.svg", "level": 5, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 15, "name": "SAP BW", "icon": "sapbw.svg", "level": 3, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 16, "name": "SAP CRM", "icon": "sapcrm.svg", "level": 3, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 17, "name": "SQL, SQLite", "icon": "sql.svg", "level": 3, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 18, "name": "SharePoint", "icon": "sharepoint.svg", "level": 3, "details":
+        {"description": [],
+         "projects": [],
+         "articles": []
+        }
+     },
+     
+     {"id": 19, "name": "Confluence/JIRA", "icon": "confluence-jira.svg", "level": 4, "details":
+        {"description": [
+            {"text": "Betreuung der abteilungsweiten Einführung von JIRA/Confluence in der Marktfolge Deutschland Bank der Volkswagen GmbH"}
+        ],
+         "projects": [
+             {"text": "Confluence Buttons", "link": "https://github.com/RubyCC/confluence-buttons"}
+         ],
+         "articles": []
+        }
+     }
+ ]
+}
