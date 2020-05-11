@@ -22,7 +22,10 @@
      },
      
      {"id": 4, "name": "R", "icon": "r.svg", "level": 4, "details": 
-        {"description": [],
+        {"description": [
+            {"text": "Im Rahmen meiner Tätigkeit bei der Kroschke sign-international GmbH"},
+            {"text": "In zahlreichen Modulen des Studiums (statistische Verfahren, Zeitreihenanalyse, Stochastik)"}
+        ],
          "projects": [],
          "articles": []
         }

@@ -11,9 +11,9 @@ d3.json('js/skills.json').then(function(data) {
     var temp = skills.tiles.enter()
         .append('div')
         // load new content to details
-        .on('click', function(d) { 
+        .on('click', function(d) {
             // make visible
-            $('#details-container').toggleClass('hidden', false);
+            $('#details-container').toggleClass('hidden', !this.classList.contains('detailed'));
         
             // add title
             $('#details-container > div > h1').html('Details zu ' + d.name);
@@ -49,11 +49,32 @@ d3.json('js/skills.json').then(function(data) {
             }
 
         })
+        // show tooltip
+        .on('mousemove', function(d) {
+            $('#detail-tooltip').css('left', d3.event.pageX + 10 + 'px');
+            $('#detail-tooltip').css('top', d3.event.pageY + 'px');
+            $('#detail-tooltip').css('visibility', function(d) {
+                if (d3.event.path[0].classList.contains('detailed') || d3.event.path[1].classList.contains('detailed') || d3.event.path[2].classList.contains('detailed')) {
+                    return('visible');
+                } else {
+                    return('hidden');
+                }
+            });
+        })
+        .on('mouseleave', function() {
+            $('#detail-tooltip').css('visibility', 'hidden');
+        })
         .attr('name', function(d) { return d.name; })
+        .attr('class', function(d) {
+            if (d.details.articles.length + d.details.projects.length + d.details.description.length > 0) {
+                return('detailed');
+            }
+        })
         .html(function(d) {
             return('<img src="img/' + d.icon + '" /><span>' + d.name + '</span><svg class="skills level-' + d.level + '" viewBox="0 0 58 10"><rect x="0" y="0" width="10" height="10" /><rect x="12" y="0" width="10" height="10" /><rect x="24" y="0" width="10" height="10" /><rect x="36" y="0" width="10" height="10" /><rect x="48" y="0" width="10" height="10" /></svg>');
         
         });
+    // add counter
     temp.append('div')
         .attr('class', function(d) {
             if (d.details.articles.length + d.details.projects.length + d.details.description.length > 0) {
@@ -64,9 +85,7 @@ d3.json('js/skills.json').then(function(data) {
         })
         .html(function(d) {
             return(d.details.articles.length + d.details.projects.length + d.details.description.length);
-          });
-    
-    
+          });    
 });
 
 
@@ -97,15 +116,28 @@ $('.sort-button').on('click', function() {
     }    
 });
 
-/* click on item */
-$('#skills-container > div').on('click', function() {
-   console.log(this.name); 
-});
 
-/* close details */
-$('#details-close').on('click', function() {
-    $('#details-container').toggleClass('hidden');
-})
+$(document).ready(function() {
+
+    /* close details */
+    $('#details-close').on('click', function() {
+        $('#details-container').toggleClass('hidden');
+    });
+
+    /* mouse move (for tooltip) */
+    /*
+    $(document).on('mousemove', function(e) {
+        $('#detail-tooltip').css('left', e.pageX + 10 + 'px');
+        $('#detail-tooltip').css('top', e.pageY + 'px');  
+    })
+    */
+
+    $('div.detailed').mousemove(function(e) {
+        console.log(e);
+        $('#detail-tooltip').css('left', e.pageX + 10 + 'px');
+        $('#detail-tooltip').css('top', e.pageY + 'px');  
+    });
+});
 
 
 
@@ -156,4 +188,5 @@ function sortSkills(value) {
         $('#skills-container > div:nth-of-type(' + i + ')').css('order', orders[i-1]);
     }
 }
+
 
