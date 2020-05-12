@@ -52,14 +52,18 @@
          "projects": [
              {"text": "Datenkompression mit LZW", "link": "https://github.com/RubyCC/lzw"}
          ],
-         "articles": []
+         "articles": [
+             {"text": "Auswirkungen von Meldungen in sozialen Medien auf Aktienmärkte (Bachelorarbeit)", "link": "https://crede.cc/2020/05/12/auswirkungen-von-meldungen-in-sozialen-medien-auf-aktienmaerkte/"}
+         ]
         }
      },
      
      {"id": 8, "name": "VBA", "icon": "vba.svg", "level": 5, "details":
         {"description": [],
          "projects": [],
-         "articles": []
+         "articles": [
+             {"text": "Das perfekte UserForm - VBA UserForms und das MVC-Konzept", "link": "https://crede.cc/2020/05/12/userforms-in-vba/"}
+         ]
         }
      },
      

@@ -24,7 +24,7 @@ d3.json('js/skills.json').then(function(data) {
             for (var i = 0; i < d.details.description.length; i++) {
                 $('#details-container > div:nth-of-type(2) > ul').append('<li>' + d.details.description[i].text + '</li>');
                 if ( d.details.description[i].link != "" && d.details.description[i].hasOwnProperty('link')) {
-                    $('#details-container > div:nth-of-type(2) li:nth-of-type(' + i+1 + ')').wrap('<a href="' + d.details.description[i].link + '" />');
+                    $('#details-container > div:nth-of-type(2) li:nth-of-type(' + i+1 + ')').wrap('<a target="_blank" href="' + d.details.description[i].link + '" />');
                 }
             }
         
@@ -34,7 +34,7 @@ d3.json('js/skills.json').then(function(data) {
             for (var i = 0; i < d.details.projects.length; i++) {
                 $('#details-container > div:nth-of-type(3) > ul').append('<li>' + d.details.projects[i].text + '</li>');
                 if ( d.details.projects[i].link != "" && d.details.projects[i].hasOwnProperty('link')) {
-                    $('#details-container > div:nth-of-type(3) li:nth-of-type(' + i+1 + ')').wrap('<a href="' + d.details.projects[i].link + '" />');
+                    $('#details-container > div:nth-of-type(3) li:nth-of-type(' + i+1 + ')').wrap('<a target="_blank" href="' + d.details.projects[i].link + '" />');
                 }
             }
         
@@ -44,7 +44,7 @@ d3.json('js/skills.json').then(function(data) {
             for (var i = 0; i < d.details.articles.length; i++) {
                 $('#details-container > div:nth-of-type(4) > ul').append('<li>' + d.details.articles[i].text + '</li>');
                 if ( d.details.articles[i].link != "" && d.details.articles[i].hasOwnProperty('link')) {
-                    $('#details-container > div:nth-of-type(4) li:nth-of-type(' + i+1 + ')').wrap('<a href="' + d.details.articles[i].link + '" />');
+                    $('#details-container > div:nth-of-type(4) li:nth-of-type(' + i+1 + ')').wrap('<a target="_blank" href="' + d.details.articles[i].link + '" />');
                 }
             }
 
